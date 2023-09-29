@@ -1,0 +1,79 @@
+:root {
+  --purpleplayercolor: purple;
+  --yellowplayercolor: yellow;
+}
+
+main-game-container {
+  display: flex;
+}
+
+#board > div {
+  width: 100px; /* Set the width and height to your desired size */
+  height: 100px;
+  background-color: white; /* Set the background color to your desired color */
+  border-radius: 50%; /* This makes the div a circle */
+  border: 2px solid gray;
+  margin: 5px;
+}
+
+#board {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: repeat(7, 1fr); /* Updated column definition */
+  justify-items: center;
+  width: 100vh;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  color: gray;
+  font-size: 3rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+#markers {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: repeat(7, 1fr); /* Updated column definition */
+  justify-items: center;
+  width: 100vh;
+  margin: auto;
+}
+
+#markers > div {
+  height: 10vmin;
+  border-width: 5vmin;
+  border-style: solid;
+  border-color: lightgrey transparent transparent;
+  transform: scale(0.7);
+  margin-bottom: -100px;
+}
+
+#markers > div:hover {
+  transform: scale(0.9);
+  transition: transform 50ms ease-in;
+  border-top-color: darkgrey;
+}
+
+#btn-container {
+  display: flex;
+}
+button {
+  margin-top: 4vmin;
+  padding: 2vmin;
+  font-size: 2vmin;
+  border-radius: 4vmin;
+  border: 0.1vmin solid grey;
+  color: grey;
+  margin: auto;
+  margin-top: 20px;
+}
+
+button:hover {
+  color: white;
+  background-color: darkgrey;
+}
